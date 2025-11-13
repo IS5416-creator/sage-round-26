@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	int age = 20;
-	   age = 19;
+    age = 19;
 	char letter = 'i';
 	bool answer = true;
 	float speed = 76.5;
