@@ -10,8 +10,7 @@ int main (){
 	}
 	else if (age>=13){
 		cout<<"teenager"<<endl;
-	}
-	else {
+	}else {
 		cout<<"child"<<endl;
 	}
 	
