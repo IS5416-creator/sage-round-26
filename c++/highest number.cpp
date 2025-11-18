@@ -15,7 +15,7 @@ int main(){
 			biggest = number[i];
 		}
 	}
-	cout<<"the biggest number is: "<<biggest<<endl;
+	cout<<"the biggest number is: "<<endl;
 	
 	return 0;
 }
