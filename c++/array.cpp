@@ -3,11 +3,8 @@
 using namespace std;
 
 int main(){
-	int i=2;
-	while(i<=100){
-		cout<<i<<endl;
-		i;
-	}
+	char vowels[]={'a','e','i','o','u'};
+	cout<<vowels[1]; 
 	
 	return 0;
 }
