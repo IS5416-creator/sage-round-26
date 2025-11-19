@@ -8,6 +8,8 @@ string alphabet(char letter){
 	}
 }
 int main(){
-	cout<<alphabet('f');
-
+	
+    cout<<alphabet('a');
+	
+                 
 }
