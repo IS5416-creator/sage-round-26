@@ -10,7 +10,7 @@ int main(){
 		cin>>num[i];
 	} 
 	for(int i=0; i<7; i++){
-		if(num[i]%2=0){
+		if(num[i]%2==0){
 			even == even+1;
 		}
 		else{
