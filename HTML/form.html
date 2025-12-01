@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="" method="get">
+           <label for="name">Username:</label>
+           <input type="text" id="name" name="username"/>
+           <br/>
+           <label for="email">email:</label>
+           <input type="text" id="email" name="email"/>
+           <br/>
+           <label for="pwd">password:</label>
+           <input type="password" id="pwd" name="password"/>
+           <br/>
+           <label>Male</label>
+           <input type="radio" name="gender" value="Male"/>
+           <br/>
+           <label>Female</label>
+           <input type="radio" name="gender" value="Female"/>
+           <br/>
+           <p>hobbies</p>
+           <label>music:</label>
+           <input name="hobby" type="checkbox" value="music"/>
+           <label>coding:</label>
+           <input name="hobby" type="checkbox" value="coding"/>
+           <label>eating:</label>
+           <input name="hobby" type="checkbox" value="eating"/>
+           <br/>
+           <label>country</label>
+           <select name="country" required>
+            <option value="">select country</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="USA">USA</option>
+            <option value="china">china</option>
+           </select>
+           <br/>
+           <label>message</label>
+           <textarea name="message" rows="5" cols="10"></textarea>
+           <br/>
+           <label>age</label>
+           <input type="number" min="0" max="5"/>
+           <button type="submit">submit</button>
+           <button type="reset">reset</button>
+        </form>
+    </body>
+</html>
