@@ -27,8 +27,10 @@ p {
     height: 1000px;
     width: 100px;
     display: inline-block;
-    /* position: relative;
-    top: -20px; */
+    position: relative;
+    /* top: -20px; */
+    left: 30px;
+    z-index: 1;
 }
 
 .div2 {
@@ -37,7 +39,9 @@ p {
     width: 100px;
     display: inline-block;
     position: relative;
+    z-index: 0;
 }
+/* z-index decides which element will be on top when overlapping*/
 
 .div2_1 {
     background-color: chocolate;
@@ -49,17 +53,95 @@ p {
 .div2_2 {
     background-color: cornflowerblue;
 }
+
 .div3 {
     display: inline-block;
-    background-color:blue;
+    background-color: blue;
     color: aliceblue;
     position: fixed;
     bottom: 5px;
     right: 5px;
 }
+
 .div4 {
     display: inline-block;
-    background-color:darkorange ;
+    background-color: darkorange;
     position: sticky;
     top: 20px;
 }
+
+.spacing {
+    background-color: goldenrod;
+    border: 5px solid black;
+    padding: 10px 5px;
+    margin: 20px 10px;
+    min-width: 200px;
+    max-width: 550px;
+    height: 20px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: armenian;
+}
+
+.pseudo:link {
+    color: blue;
+}
+
+.pseudo:visited {
+    color: brown;
+}
+
+.pseudo:hover {
+    color: chartreuse;
+}
+
+.pseudo:active {
+    color: deeppink;
+}
+
+.div3:hover {
+    background-color: peru;
+}
+/* pseudo class (uses a single colon) */
+
+h2::after {
+content: ' gone';
+}
+h2::before {
+content: 'avchs ';
+}
+h2::selection {
+    background-color: rgb(212, 156, 35);
+    color: white;
+}
+p::first-letter {
+    font-style: oblique;
+    font-size: 30px;
+}
+p::first-line {
+    font-style: italic;
+    font-size: 20px;
+    color: blueviolet;
+}
+/* pseudo element (uses two colons) */
+@media screen and (max-width: 300px) {
+    body{
+        background-color: burlywood;
+    }
+}
+@media screen and (min-width: 301px) and (max-width: 650px) {
+    body{
+        background-color: rgb(84, 216, 154);
+    }
+}
+@media screen and (min-width: 651px) {
+    body{
+        background-color: rgba(61, 225, 231, 0.795);
+    }
+}
+/* @media makes the website compatable to any device's screen */
