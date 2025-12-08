@@ -2,12 +2,12 @@
 using namespace std;
 
 void displayBoard(char b[]) {
-    cout << "\n";
-    cout << " " << b[0] << " | " << b[1] << " | " << b[2] << "\n";
-    cout << "---+---+---\n";
-    cout << " " << b[3] << " | " << b[4] << " | " << b[5] << "\n";
-    cout << "---+---+---\n";
-    cout << " " << b[6] << " | " << b[7] << " | " << b[8] << "\n\n";
+    cout << endl;
+    cout << " " << b[0] << " | " << b[1] << " | " << b[2] << endl;
+    cout << "---+---+---"<<endl;
+    cout << " " << b[3] << " | " << b[4] << " | " << b[5] << endl;
+    cout << "---+---+---"<<endl;
+    cout << " " << b[6] << " | " << b[7] << " | " << b[8] << endl;
 }
 
 bool checkWin(char b[], char p) {
@@ -43,7 +43,7 @@ int main() {
         move--;
 
         if (move < 0 || move > 8 || board[move] == 'X' || board[move] == 'O') {
-            cout << "Invalid move! Try again.\n";
+            cout << "Invalid move! Try again."<<endl;
             continue;
         }
 
@@ -51,13 +51,13 @@ int main() {
 
         if (checkWin(board, player)) {
             displayBoard(board);
-            cout << "Player " << player << " wins!\n";
+            cout << "Player " << player << " wins!"<<endl;
             break;
         }
 
         if (boardFull(board)) {
             displayBoard(board);
-            cout << "It's a draw!\n";
+            cout << "It's a draw!"<<endl;
             break;
         }
 
