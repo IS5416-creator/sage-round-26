@@ -1,8 +1,10 @@
-
+import Calculater from "./Calculater";
 
 
 function App() {
-  return 
+  return <div>
+    <Calculater/>
+  </div>
 
 }
 
