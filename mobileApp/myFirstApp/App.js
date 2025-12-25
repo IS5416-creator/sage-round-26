@@ -40,6 +40,7 @@ export default function App() {
       <View style={{flex: 1, flexDirection: 'row', justifyContent: "space-around"}}>
         <Card/>
         <Card/>
+        <Card/>
       </View>
     </View>
   </ScrollView>
