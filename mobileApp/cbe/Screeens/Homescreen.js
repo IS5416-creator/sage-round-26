@@ -2,7 +2,7 @@ import { Button, Text, View } from "react-native";
 
 
 export default function Homescreen({navigation}){
-    return <View style={{flex:1,flexDirection: "column",justifyContent:"flex-start", gap:20 }}>
+    return <View style={{flex:1,flexDirection: "column",justifyContent:"flex-start", gap:10 }}>
         <Text>Home page</Text>
         <Button 
         title="Details" 

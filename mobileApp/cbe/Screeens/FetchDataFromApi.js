@@ -2,7 +2,7 @@ import { ActivityIndicator, FlatList, Text, View } from "react-native";
 import { useEffect, useState } from "react";
 
 export default function FetchDataFromApi() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -15,16 +15,17 @@ export default function FetchDataFromApi() {
   
   if (!data && !error) {
     return (
-      <View>
+      <View style={{flex:1,justifyContent:"center",alignContent:"center", size:"large"}}>
         <ActivityIndicator />
       </View>
     );
   }
+  // if (!data && !error) --> if there is no data and there is no error
 
   
   if (error) {
     return (
-      <View>
+      <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
         <Text>ERROR</Text>
       </View>
     );
@@ -44,4 +45,12 @@ export default function FetchDataFromApi() {
       )}
     />
   );
+  // in other way
+  // if (data == undefined){
+  // return <View>
+  // {error? <Text>Error</Text>:<ActivityIndicator />}
+  // </View> 
+  //  }else{
+    // <FlatList/>}
+  // }
 }
