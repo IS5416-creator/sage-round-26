@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Button, Image, View, Text } from "react-native";
 import { CameraView, Camera } from "expo-camera";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
   const [hasPermission, setHasPermission] = useState();
@@ -38,22 +39,26 @@ export default function App() {
   }
 
   return (
-    <View style={{ flex: 1 }}>
-      <CameraView
-        ref={cameraRef}
-        style={{ flex: 1 }}
-        facing="front"
-      />
+    <SafeAreaProvider>
+      <SafeAreaView style={{flex:1}}>
+        <View style={{ flex: 1 }}>
+          <CameraView
+            ref={cameraRef}
+            style={{ flex: 1 }}
+            facing="back"
+          />
 
-      {photo && (
-        <Image
-          source={{ uri: photo }}
-          style={{ width: 100, height: 100, margin: 10 }}
-        />
-      )}
+          {photo && (
+            <Image
+              source={{ uri: photo }}
+              style={{ width: 100, height: 100, margin: 10 }}
+            />
+          )}
 
-      <Button title="Take picture" onPress={takePhoto} />
-    </View>
+          <Button title="Take picture" onPress={takePhoto} />
+        </View>
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
