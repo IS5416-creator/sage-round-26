@@ -1,0 +1,9 @@
+
+
+export default function Projects(){
+    return<>
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    </>
+}
