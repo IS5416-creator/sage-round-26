@@ -9,13 +9,17 @@ function Projects() {
       </div>
 
       <div className="card">
-        <h3>Todo App</h3>
-        <p>Task management app with add and delete features.</p>
+        <h3>Muliplication Table</h3>
+        <p>Simple multiplication tableusing C++.</p>
       </div>
 
       <div className="card">
         <h3>Landing Page</h3>
-        <p>Responsive landing page using HTML and CSS.</p>
+        <p>Landing page for a restaurant using Figma.</p>
+      </div>
+      <div className="card">
+        <h3>Registration Page</h3>
+        <p>Registration page for a random website using Figma.</p>
       </div>
     </section>
   );

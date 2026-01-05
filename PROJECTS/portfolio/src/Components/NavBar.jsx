@@ -1,4 +1,4 @@
-function Navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar">
       <a href="#home">Home</a>
@@ -10,4 +10,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+

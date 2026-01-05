@@ -1,4 +1,4 @@
-function Skills() {
+export default function Skills() {
   const skills = [
     "HTML",
     "CSS",
@@ -21,4 +21,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+
