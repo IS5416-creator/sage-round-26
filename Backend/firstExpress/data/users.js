@@ -1,0 +1,29 @@
+const users = [
+    {
+        "name":"israel",
+        "gender":"M",
+        "age":"18"
+    },
+    {
+        "name":"mesi",
+        "gender":"M",
+        "age":"25"
+    },
+    {
+        "name":"kalkidan",
+        "gender":"F",
+        "age":"20"
+    },
+    {
+        "name":"yonatan",
+        "gender":"M",
+        "age":"23.5"
+    },
+    {
+        "name":"hana",
+        "gender":"F",
+        "age":"91"
+    },
+]
+
+module.exports=users
