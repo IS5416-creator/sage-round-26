@@ -1,0 +1,25 @@
+meta {
+  name: post
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3001/movies
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title":"Avengers",
+    "genre":"action",
+    "director":"the russo brothers",
+    "runTime": 150
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

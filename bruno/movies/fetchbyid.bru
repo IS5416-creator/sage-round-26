@@ -1,0 +1,16 @@
+meta {
+  name: fetchbyid
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3001/movies/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
